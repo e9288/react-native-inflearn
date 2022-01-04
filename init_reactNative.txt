@@ -1,0 +1,19 @@
+-- react-native project 생성
+react-native init winthiary_app
+
+-- 관련 의존성 모듈 설치
+npm install --save axios@0.18.0 react-redux@6.0.1 redux@4.0.1 redux-promise@0.6.0 --legacy-peer-deps 
+npm install @react-navigation/native@5.7.6
+npm install react-native-gesture-handler
+
+npm install @react-navigation/stack@5.9.3 @react-navigation/bottom-tabs@5.9.2
+npm install react-native-reanimated@1.13.1 react-native-safe-area-context@3.1.8 react-native-screens@2.11.0 @react-native-community/masked-view@0.1.10 --legacy-peer-deps
+
+-- mac os 일 경우 의존성 설치 시 마지막에
+npx pod-install ios
+
+-- 프로젝트 빌드
+npm start
+-- 네이티브 에뮬레이터 실행
+react-native run-ios
+react-native run-android
